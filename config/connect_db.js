@@ -3,7 +3,7 @@ var express = require('express');
 
 mongoose
   .connect(
-    'mongodb://184.172.214.148:31899/cadastro',
+    'mongodb://localhost:27017/cadastro',
     { useNewUrlParser: true }
   )
   .then(() => console.log('MongoDB Connected'))

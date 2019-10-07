@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>MicroService - VSAlmeida | IBM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css"   href="css/style.css">
+</head>
+<body class="cor">
+	<div class="container">
+		<h4> <b>Cadastre-se Conosco</b> </h4>
+		<form autocomplete="off" method="post" action="/item/add">
+			<div class="row">
+				<div class="col-6">
+				<label>Nome
+				<input type="text" name="nome" id="nome" placeholder="Seu Nome" required> </label>
+				</div>
+				<div class="col-6">
+				<label>Sobrenome
+				<input type="text" name="sobrenome" id="sobrenome" placeholder="Seu Sobrenome" required> </label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+				<label>CPF
+				<input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" required> </label>
+				</div>
+				<div class="col-6">
+				<label>CEP
+				<input type="number" name="cep" id="cep" placeholder="00000-000" required> </label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+				<label>Telefone
+				<input type="number" name="tel" id="tel" placeholder="(00) 0000-0000" required> </label>
+				</div>
+			</div>
+			<input type="submit" class="btn btn-light" value="Cadastrar">
+			<div class="text-center">
+				<small> 
+					<a href="/cadastrados" class="text-muted">Users Cadastrados</a>
+				</small>	
+			</div>
+		</form>
+	</div>
+</body>
+</html>

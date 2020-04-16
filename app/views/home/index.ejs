@@ -11,7 +11,7 @@
 	<div class="container">
 		<h4> <b>Sensores</b> </h4>
 		<form autocomplete="off" method="post" action="/item/add">
-			<div class="row">
+			<div class>
 				<div class="col-6">
 				<label>Sensor
 				<input type="number" name="sensor" id="sensor" placeholder="id do sensor" required> </label>
@@ -21,14 +21,17 @@
 				<input type="text" name="nome" id="nome" placeholder="Nome do sensor" required> </label>
 				</div>
 			</div>
-			<div class="row">
+			<div class>
 				<div class="col-6">
 				<label>Tipo
 				<input type="text" name="tipo" id="tipo" placeholder="Ex.: Temperatura" required> </label>
 				</div>
 				<div class="col-6">
-				<label>Estado
-				<input type="text" name="estado" id="estado" placeholder="Ex.: ON" required> </label>
+				<label>Escolha o estado </label> <br>
+				<label>ON</label>
+				<input type="radio" name="estado" id="estado" placeholder="Ex.: ON" required> </label>
+				<label>OFF</label>
+				<input type="radio" name="estado" id="estado" placeholder="Ex.: ON" required> </label>
 				</div>
 			</div>
 			<div class="row">

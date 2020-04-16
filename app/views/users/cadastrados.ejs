@@ -2,19 +2,21 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>MicroService - VSAlmeida | IBM</title>
+	<title>Microservice Sensor</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css"   href="css/style.css">
 </head>
 <body class="cor">
 	<div class="container">
-        <h4><b>Usuarios Cadastrados</b></h4>
+        <h4><b>Sensores</b></h4>
         <ul>
         <% items.forEach(function(item) { %>
             <li>
-                <b>Nome:</b> <%= item.nome %> <%= item.sobrenome %> <br>
-                <b>Telefone:</b> <%= item.tel %>
+                <b>Nome:</b> <%= item.nome %> <br>
+                <b>Tipo:</b> <%= item.tipo %> <br>
+		<b>Estado:</b>  <%= item.estado %> <br> 
+		<b>Valor:</b> <%= item.valor %>
             </li>
         <% }); %>
         </ul>
